@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?= "ciao"?>
+    <?$paragrafo = "La Juventus è la squadra più ladra del globo terracqueo";
+    echo "$paragrafo <br/>";
+    echo strlen($paragrafo);
+    
+    ?>
 </body>
 </html>
