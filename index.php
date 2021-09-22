@@ -7,10 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <?$paragrafo = "La Juventus è la squadra più ladra del globo terracqueo";
+    <?php $paragrafo = "La Juventus è la squadra più ladra del globo terracqueo";
     echo "$paragrafo <br/>";
     echo strlen($paragrafo);
+    $badword = $_GET['badword'];
     
+
+    ?>
+    <hr>
+    <?php 
+    $censura = str_replace($badword, '***', $paragrafo);
+    echo "$censura <br/>";
+    echo strlen($censura)
     ?>
 </body>
 </html>
